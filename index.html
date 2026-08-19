@@ -673,7 +673,7 @@
     dl.type = "button";
     dl.title = "Download";
     dl.setAttribute("aria-label", "Download " + item.name);
-    dl.textContent = "↓";
+    dl.textContent = "v";
     dl.addEventListener("click", function () { downloadItem(item); });
 
     var rm = document.createElement("button");
@@ -681,7 +681,7 @@
     rm.type = "button";
     rm.title = "Remove";
     rm.setAttribute("aria-label", "Remove " + item.name);
-    rm.textContent = "×";
+    rm.textContent = "&times;";
     rm.addEventListener("click", function () { removeItem(item); });
 
     actions.appendChild(dl);
@@ -741,7 +741,7 @@
     nums.appendChild(text(item.srcW + "x" + item.srcH + " " + formatBytes(item.originalBytes)));
     var arrow = document.createElement("span");
     arrow.className = "arrow";
-    arrow.textContent = "→";
+    arrow.textContent = "->";
     nums.appendChild(arrow);
     nums.appendChild(text(item.outW + "x" + item.outH + " " + formatBytes(item.outBytes) + "  "));
     var s = document.createElement("span");
