@@ -255,6 +255,9 @@
     .thumb { width: 52px; height: 52px; }
     .actions { grid-column: 1 / -1; justify-content: flex-end; }
   }
+
+/* A focus ring that is visible on any background: white inner ring, black outer ring (WCAG 2.4.7, 1.4.11). */
+:is(a[href], button, input, select, textarea, summary, [tabindex]):focus-visible { outline: 2px solid #0a0a0a; outline-offset: 2px; box-shadow: 0 0 0 2px #ffffff; }
 </style>
 </head>
 <body>
